@@ -1,0 +1,13 @@
+@media all and (max-width:600px){
+	body {
+		color:$tertiary;
+	}
+	h1 {
+		font-size:ems(18px);
+		@include themeCenterFluid(30px);
+	}
+	/*====================----------//////////
+		MODULES
+	\\\\\----------====================*/
+	@import '../modules/modulesMobile';
+}

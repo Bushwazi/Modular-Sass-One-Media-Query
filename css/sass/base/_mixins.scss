@@ -1,0 +1,13 @@
+@mixin boxSizing($value:border-box){
+	-webkit-box-sizing:$value;
+	-moz-box-sizing:$value;
+	box-sizing:$value;
+}
+@mixin themeCenterDesktop($mb:0){
+	width:960px;
+	margin:0 auto $mb;
+}
+@mixin themeCenterFluid($mb:0){
+	width:90%;
+	margin:0 5% $mb;
+}

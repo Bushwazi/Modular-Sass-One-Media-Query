@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+/*
+ * MODULE: $1 ==> styles for desktop
+ */
+.$1 {
+  /* $1 css */
+}
+@mixin $1Tablet(){
+  /*
+   * MODULE: $1 ==> styles for tablet
+   */
+  .$1 {
+    /* $1 css */
+  }
+}
+@mixin $1Mobile(){
+  /*
+   * MODULE: $1 ==> styles for mobile
+   */
+  .$1 {
+    /* $1 css */
+  }
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>moduleSass</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

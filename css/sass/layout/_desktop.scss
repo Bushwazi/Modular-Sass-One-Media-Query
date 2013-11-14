@@ -1,0 +1,18 @@
+/*====================----------//////////
+	DESKTOP STYLES => Applies to all widths
+\\\\\----------====================*/
+body {
+	font-family:Georgia, 'Times New Roman', sans-serif;
+	font-size:$themeBaseFontSize;
+	line-height:1.3em;
+	color:$primary;
+}
+h1 {
+	padding-top:ems(20px,24px);
+	font-size:ems(24px);
+	@include themeCenterDesktop(20px);
+}
+/*====================----------//////////
+	MODULES
+\\\\\----------====================*/
+@import '../modules/modulesDesktop';

@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*====================----------//////////
+	RESET  (PROPS TO: http://meyerweb.com/eric/tools/css/reset/)
+\\\----------====================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+:focus {
+  outline: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.group:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* html .group {
+  zoom: 1; }
+
+*:first-child + html .group {
+  zoom: 1; }
+
+/*====================----------//////////
+	Micro Clear Fix | http://nicolasgallagher.com/micro-clearfix-hack/
+\\\----------====================*/
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+/*====================----------//////////
+	DESKTOP STYLES => Applies to all widths
+\\\----------====================*/
+body {
+  font-family: Georgia, 'Times New Roman', sans-serif;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: red; }
+
+h1 {
+  padding-top: 0.83333em;
+  font-size: 1.5em;
+  width: 960px;
+  margin: 0 auto 20px; }
+
+/*====================----------//////////
+	MODULES
+\\\----------====================*/
+/*
+ * MODULE: columns ==> styles for desktop
+ */
+.columns {
+  overflow: hidden;
+  border: solid 1px #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 960px;
+  margin: 0 auto 20px; }
+  .columns .column {
+    display: inline-block;
+    float: left;
+    border-right: solid 1px #666;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center; }
+  .columns > .column:last-child {
+    border-right: none; }
+
+.col-two .column {
+  width: 50%; }
+
+.col-three .column {
+  width: 33.33333%; }
+
+.col-four .column {
+  width: 25%; }
+
+@media all and (max-width: 960px) {
+  body {
+    color: lime; }
+
+  h1 {
+    font-size: 1.875em;
+    width: 90%;
+    margin: 0 5% 20px; }
+
+  /*====================----------//////////
+  	MODULES
+  \\\----------====================*/
+  /*
+   * MODULE: columns ==> styles for tablet
+   */
+  .columns {
+    width: 90%; }
+
+  .col-four .column {
+    width: 50%; }
+  .col-four .column:nth-child(1),
+  .col-four .column:nth-child(2) {
+    border-bottom: solid 1px #666; } }
+@media all and (max-width: 600px) {
+  body {
+    color: blue; }
+
+  h1 {
+    font-size: 1.125em;
+    width: 90%;
+    margin: 0 5% 30px; }
+
+  /*====================----------//////////
+  	MODULES
+  \\\----------====================*/
+  /*
+   * MODULE: columns ==> styles for mobile
+   */
+  .columns {
+    overflow: hidden; }
+    .columns .column {
+      float: none; }
+
+  .col-two .column,
+  .col-three .column,
+  .col-four .column {
+    width: 100%;
+    border-bottom: solid 1px #666; }
+
+  .col-two > .column:last-child,
+  .col-three > .column:last-child,
+  .col-four > .column:last-child {
+    border-bottom: none; } }
+
+/*# sourceMappingURL=screen.css.map */

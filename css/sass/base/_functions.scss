@@ -1,0 +1,5 @@
+@function ems($target, $context: $themeBaseFontSize) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + em;
+	/* sample: font-size:ems(36px); will return 36/16 = ems */
+}
