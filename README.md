@@ -1,3 +1,5 @@
+##Modular Sass using One Media Query demo
+
 I create my folder structure and have a modules folder, but then once I get into the media queries, I find myself adding the addition layouts into a different file then the module file. I don't want to have media queries called all over my css and I don't want my module SASS broken into different files.
 
 The solution I've decided to use is adding mixins into my module file and then calling them in another area, so then all the sass related to the module is in one file.
@@ -131,3 +133,5 @@ __MOBILE__
     }
 
 and then `screen.scss` calls all the layouts and groups them into one file.
+
+####* Sublime Snippet is to create a default module
